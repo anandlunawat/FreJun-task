@@ -4,8 +4,7 @@ import { toast } from "react-toastify"
 import PrivateRoutes from "../routes/PrivateRoutes"
 import Loader from "./Loader/Loader"
 import Result from "./Result"
-// import { searchResult } from "../utils/searchResult"
-// import {CiSearch} from "react-icons/ci"
+import {CiSearch} from "react-icons/ci"
 
 export function Users() {
     const navigate = useNavigate()
@@ -53,13 +52,16 @@ export function Users() {
 
     return (
         <PrivateRoutes>
-            <div className="">
+            <div>
                 <header className="flex flex-row bg-[#F9FAFB] justify-between items-center pr-8 pl-8 h-[72px]">
                     <h1 className="w-[164px] h-[20px] font-semibold shad text-l">FreJun Task</h1>
                     <button className="w-[80px] h-[40px] bg-white border border-solid border-[#D0D5DD] font-semibold text-sm text-[#344054] rounded-lg shadow-b" onClick={logout}>Logout</button>
                 </header>
-                <div className="flex flex-col items-center">
-                    <input type={"search"} className="absolute top-[20%] left-[40%] max-sm:left-[25%] border border-solid border-[#D0D5DD] rounded-lg shadow-b"  placeholder={"Search"} onChange={onChange}/>
+                <div className="flex flex-col items-center mt-8">
+                    <div className="flex flex-row gap-2 items-center border border-solid border-[#D0D5DD] rounded-lg shadow-b p-2">
+                        <CiSearch />
+                        <input type={"search"} className="top-[20%] left-[40%] max-sm:left-[25%] peer/cc focus:outline-none"  placeholder="Search" onChange={onChange}/>
+                    </div>
                 {   
                     data !== undefined ? <Result data={searchData===undefined ? data : searchData}/> : <Loader />
                 }

@@ -1,5 +1,4 @@
 import * as React from 'react';
-// import { useEffect, useState } from "react"
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -25,10 +24,10 @@ export default function Result(props) {
           {props.data.map((prop) => (
             <TableRow
               key={prop.id}
-              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+              sx={{ '&:last-child td, &:last-child th': { border: 0 }}}
             >
               <TableCell component="th" scope="row">
-                <div className='flex flex-row items-center text-sm font-medium text-[#101828] non-italic'><img src={prop.image} alt={prop.firstName} width="40px" height="40px"/>&nbsp;{prop.firstName}&nbsp;{prop.lastName}</div>
+                <div className='flex flex-row items-center text-sm font-bold text-[#101828] non-italic'><img src={prop.image} alt={prop.firstName} width="40px" height="40px"/>&nbsp;{prop.firstName}&nbsp;{prop.lastName}</div>
               </TableCell>
               <TableCell>{prop.email}</TableCell>
               <TableCell>{prop.age}</TableCell>
