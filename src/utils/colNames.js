@@ -1,0 +1,1 @@
+export const colNames =["User","Email","Age","Gender"]
