@@ -6,7 +6,7 @@ import Loader from "./Loader/Loader"
 import Result from "./Result"
 import {CiSearch} from "react-icons/ci"
 
-export function Users() {
+export function Users(props) {
     const navigate = useNavigate()
     const [data,setData] = useState()
     const [searchData,setSearchData] = useState()

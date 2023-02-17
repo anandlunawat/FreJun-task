@@ -25,9 +25,10 @@ export default function Result(props) {
             <TableRow
               key={prop.id}
               sx={{ '&:last-child td, &:last-child th': { border: 0 }}}
+              className='max-sm:gap-6'
             >
-              <TableCell component="th" scope="row">
-                <div className='flex flex-row items-center text-sm font-bold text-[#101828] non-italic'><img src={prop.image} alt={prop.firstName} width="40px" height="40px"/>&nbsp;{prop.firstName}&nbsp;{prop.lastName}</div>
+              <TableCell component="th" scope="row" align='left'>
+                <div className='flex flex-row max-sm:flex-shrink items-center text-sm font-bold text-[#101828] non-italic'><img src={prop.image} alt={prop.firstName} width="40px" height="40px"/><h1>{prop.firstName}</h1><h1> {prop.lastName}</h1></div>
               </TableCell>
               <TableCell>{prop.email}</TableCell>
               <TableCell>{prop.age}</TableCell>
