@@ -45,7 +45,6 @@ export function Users(props) {
             const filteredData = data.filter(
                 detail => {return (detail.firstName.toLowerCase().includes(e.target.value.toLowerCase()) || detail.lastName.toLowerCase().includes(e.target.value.toLowerCase()) || detail.email.toLowerCase().includes(e.target.value.toLowerCase())) }
             )
-            console.log("Filtered Data ",filteredData)
             setSearchData(filteredData)
         }
     }

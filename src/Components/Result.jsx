@@ -11,7 +11,7 @@ import { colNames } from '../utils/colNames';
 export default function Result(props) {
 
   return (
-    <TableContainer component={Paper} className="top-[30%] max-w-[640px] max-sm:max-w-[450px] max-h-[404px] absolute bottom-4 rounded-lg border border-solid border-[#EAECF0] shadow-t">
+      <TableContainer component={Paper} className="top-[30%] max-w-[640px] max-sm:max-w-[450px] max-h-[404px] absolute bottom-4 rounded-lg border border-solid border-[#EAECF0] shadow-t">
       <Table aria-label="simple table" stickyHeader>
         <TableHead >
           <TableRow>
@@ -21,7 +21,7 @@ export default function Result(props) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {props.data.map((prop) => (
+          {props.data.length !==0 ? props.data.map((prop) => (
             <TableRow
               key={prop.id}
               sx={{ '&:last-child td, &:last-child th': { border: 0 }}}
@@ -34,7 +34,7 @@ export default function Result(props) {
               <TableCell>{prop.age}</TableCell>
               <TableCell>{prop.gender}</TableCell>
             </TableRow>
-          ))}
+          )) : <div className='text-center w-[100%] text-sm m-[45%] font-medium text-[#667085] non-italic'>🔍 Enter Valid Keyword</div>}
         </TableBody>
       </Table>
     </TableContainer>
