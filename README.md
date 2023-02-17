@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Frejun Task - User Search Application
+This project is a React application that includes a login page and a user page. The user page includes a search box and a table that displays data returned by an API. The application was built using React, Tailwind CSS, and Material-UI.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Getting Started
+To run the application, you will need to have Node.js and NPM installed on your machine. Once you have installed these, you can follow these steps:
 
-## Available Scripts
+Clone the repository to your local machine.
+Navigate to the project directory and run npm install to install the project dependencies.
+Run npm start to start the development server.
+Open your web browser and navigate to http://localhost:3000 to view the application.
+## Features
+## Login Page
+The login page allows users to enter their email and password to log in to the application. If the user enters valid credentials, they will be redirected to the user page. If they enter invalid credentials, an error message will be displayed.
 
-In the project directory, you can run:
+## User Page
+The user page includes a search box where the user can enter a search term to initiate the search. The data is then displayed in a table on the page.
 
-### `npm start`
+## Tech Stack
+The following technologies were used to build this application:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### **React** : a JavaScript library for building user interfaces
+### **Tailwind CSS** : a utility-first CSS framework for rapid UI development
+### **Material-UI** : a React UI framework that provides pre-built components and styles
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## API
+The application retrieves data from a mock API provided by JSONPlaceholder. The data is returned in JSON format and includes fields such as name, email, phone number, etc.
 
-### `npm test`
+## License
+This project is licensed under the MIT license. See the LICENSE file for details.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contact
+Project Link: https://frejun-anand-task.netlify.app
 
-### `npm run build`
+## Acknowledgments
+Frejun for providing this task opportunity.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
